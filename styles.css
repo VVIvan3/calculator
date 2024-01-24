@@ -1,0 +1,63 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+#calcBody {
+    height: 45%;
+    width: 20%;
+    /* aspect-ratio: 1/1; */
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+    padding: 5px;
+    gap: 15px
+}
+
+#mainBox {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+#calculusButtons,
+#mainButtons {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonHolder,
+#textBox {
+    display: flex;
+}
+
+.operatorButton,
+.operandButton,
+.buttonHolder,
+#input,
+#output,
+#mainButtons {
+    flex: 3
+}
+#calculusButtons {
+    flex: 1
+}
+
+#output,
+#input {
+    text-align: right;
+    border: none;
+}
+
+.operandButton {
+    background-color: gold;
+    border: solid 2px black;
+}
+
+#textBox {
+    flex-direction: column;
+    justify-content: center;
+    background-color: green;
+}

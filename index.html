@@ -2,11 +2,50 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles.css">
         <script src="./script.js" defer></script>
         <title>Simple calculator</title>
     </head>
     <body>
-        
+        <div id="calcBody">
+            <div id="textBox">
+                <div id="output">1231231</div>
+                <div id="input">0</div>
+            </div>
+            <div id="mainBox">
+                <div id="mainButtons">
+                    <div class="buttonHolder">
+                        <button class="operatorButton btn" id="clear">Clear</button>
+                    </div>
+                    <div class="buttonHolder">
+                        <button class="operandButton btn" id="7">7</button>
+                        <button class="operandButton btn" id="8">8</button>
+                        <button class="operandButton btn" id="9">9</button>
+                    </div>
+                    <div class="buttonHolder">
+                        <button class="operandButton btn" id="4">4</button>
+                        <button class="operandButton btn" id="5">5</button>
+                        <button class="operandButton btn" id="6">6</button>
+                    </div>
+                    <div class="buttonHolder">
+                        <button class="operandButton btn" id="1">1</button>
+                        <button class="operandButton btn" id="2">2</button>
+                        <button class="operandButton btn" id="3">3</button>
+                    </div>
+                    <div class="buttonHolder">
+                        <button class="operandButton btn" id="0">0</button>
+                        <button class="operandButton btn" id="dot">.</button>
+                    </div>
+                </div>
+                <div id="calculusButtons">
+                    <button class="operatorButton btn" id="addition">+</button>
+                    <button class="operatorButton btn" id="substraction">-</button>
+                    <button class="operatorButton btn" id="multiplication">*</button>
+                    <button class="operatorButton btn" id="division">/</button>
+                    <button class="operatorButton btn" id="result">=</button>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
