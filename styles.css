@@ -61,3 +61,9 @@ body {
     justify-content: center;
     background-color: green;
 }
+
+.period {
+    background-color: gold;
+    border: solid 2px black;
+    flex: 2;
+}
