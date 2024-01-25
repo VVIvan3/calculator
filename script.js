@@ -44,7 +44,7 @@ function reset() {
 
 operationButtons.forEach((button) => {
     button.addEventListener(('click'), (event) => {
-        if (outputOperand === '') {
+        if (outputOperand === '' && inputOperand !== '') {
             forceUpdateOutput(inputOperand);
             inputOperand = '';
             input.textContent = '0';
