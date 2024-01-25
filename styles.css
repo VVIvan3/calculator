@@ -6,9 +6,10 @@ body {
     width: 100vw;
 }
 #calcBody {
+    border-radius: 10px;
+    border: double black 3px;
     height: 45%;
     width: 20%;
-    /* aspect-ratio: 1/1; */
     display: flex;
     flex-direction: column;
     background-color: gray;
@@ -41,7 +42,8 @@ body {
 #mainButtons {
     flex: 3
 }
-#calculusButtons {
+#calculusButtons,
+#ce {
     flex: 1
 }
 
@@ -66,4 +68,30 @@ body {
     background-color: gold;
     border: solid 2px black;
     flex: 2;
+}
+
+.operandButton:hover,
+.period:hover {
+    background-color: rgb(163, 144, 36);
+    color: white;
+}
+
+.operandButton:active,
+.period:active {
+    background-color: chartreuse;
+}
+.operatorButton,
+#ce {
+    border: solid black 1px;
+}
+.operatorButton:hover,
+#ce:hover {
+    color: white;
+    background-color: bisque;
+}
+
+.operatorButton:active,
+#ce:active {
+    color: white;
+    background-color: silver;
 }
