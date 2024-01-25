@@ -45,7 +45,7 @@ function reset() {
 function selectOperator(button) {
     operationButtons.forEach((button) => {
         button.setAttribute('class', 'operatorButton btn');
-    })
+    });
     const selectedBtn = document.querySelector(`#${button}`);
     selectedBtn.setAttribute('class', 'selectedOperator operatorButton btn');
 }
