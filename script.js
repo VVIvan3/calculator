@@ -42,6 +42,14 @@ function reset() {
     input.textContent = '0';
 }
 
+function selectOperator(button) {
+    operationButtons.forEach((button) => {
+        button.setAttribute('class', 'operatorButton btn');
+    })
+    const selectedBtn = document.querySelector(`#${button}`);
+    selectedBtn.setAttribute('class', 'selectedOperator operatorButton btn');
+}
+
 operationButtons.forEach((button) => {
     button.addEventListener(('click'), (event) => {
         if (outputOperand === '' && inputOperand !== '') {
@@ -54,7 +62,8 @@ operationButtons.forEach((button) => {
             case 'substraction':
             case 'multiplication':
             case 'division':
-                selectedOperator = event.target.id
+                selectedOperator = event.target.id;
+                selectOperator(event.target.id);
         }
     });
 });
