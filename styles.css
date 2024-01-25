@@ -95,3 +95,9 @@ body {
     color: white;
     background-color: silver;
 }
+
+.btn {
+    font-family: sans-serif;
+    text-align: center;
+    font-size: medium;
+}
