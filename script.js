@@ -40,6 +40,9 @@ function reset() {
     selectedOperator = '';
     output.textContent = '0';
     input.textContent = '0';
+    operationButtons.forEach((button) => {
+        button.setAttribute('class', 'operatorButton btn');
+    });
 }
 
 function selectOperator(button) {
